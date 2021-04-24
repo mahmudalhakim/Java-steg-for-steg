@@ -1,0 +1,61 @@
+
+// Filen BilTest5.java
+import javax.swing.*;
+
+class BilTest5 {
+  public static void main(String[] arg) {
+    Bil b1 = new Bil();
+    Bil b2 = new Bil();
+    b1.regNr = "ABC123";
+    b1.fabrikat = "Citroen XSara Picasso";
+    b1.årsmodell = 2010;
+    b1.tjänstevikt = 1360;
+    b1.effekt = 115;
+    b1.ägare = new Person();
+    b1.ägare.förnamn = "Lisa"; 
+    b1.ägare.efternamn = "Andersson"; 
+    b2.regNr = "XYZ001";
+    b2.fabrikat = "Renault Espace";
+    b2.årsmodell = 2009;
+    b2.tjänstevikt = 1760;
+    b2.effekt = 120;
+    b2.ägare = new Person();
+    b2.ägare.förnamn = "Mikael"; 
+    b2.ägare.efternamn = "Olsson"; 
+    
+    System.out.println(b1.regNr + "\n" + b1.fabrikat + 
+                       " " + b1.årsmodell + 
+                       "\ntjänstevikt: " + b1.tjänstevikt + 
+                       "\nmotoreffekt: " + b1.effekt +
+                       "\nägare: " + b1.ägare.förnamn + " " + b1.ägare.efternamn +
+                       "\nskatt: " + b1.tjänstevikt*Bil.skattPerKg);
+    System.out.println(b2.regNr + "\n" + b2.fabrikat + 
+                       " " + b2.årsmodell + 
+                       "\ntjänstevikt: " + b2.tjänstevikt + 
+                       "\nmotoreffekt: " + b2.effekt +
+                       "\nägare: " + b2.ägare.förnamn + " " + b2.ägare.efternamn +
+                       "\nskatt: " + b2.tjänstevikt*Bil.skattPerKg);
+
+  }
+}
+
+// Filen Person.java
+class Person {
+  String förnamn;
+  String efternamn;
+  int föddÅr;
+  boolean singel = true;    // initiering
+}
+
+
+// Filen Bil.java
+class Bil {
+  static double skattPerKg = 1.3;
+  String regNr;
+  String fabrikat;
+  int årsmodell;
+  double tjänstevikt;
+  double effekt;
+  Person ägare;
+}
+

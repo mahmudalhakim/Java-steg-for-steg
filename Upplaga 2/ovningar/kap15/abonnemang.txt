@@ -1,0 +1,12 @@
+145   5 Mobi com
+195  10 Mobi mellan
+245  20 Mobi stor
+295  40 Mobi max
+99    4 Tele sweet
+145   8 Tele more
+249  25 Tele big
+349 100 Tele 100
+100   3 Ring S
+220  18 Ring M
+320  50 Ring L
+495 200 Super
