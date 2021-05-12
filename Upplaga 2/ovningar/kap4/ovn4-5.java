@@ -5,15 +5,16 @@ import java.util.*;
 class Paket {
   public static void main (String[] arg) {
     var input = new Scanner(System.in);
-    System.out.print("Längd (cm)? ");
+    System.out.print("LÃ¤ngd (cm)? ");
     int l = input.nextInt();
     System.out.print("Bredd (cm)? ");
     int b = input.nextInt();
     System.out.print("Tjocklek (cm)? ");
     int t = input.nextInt();
+    // t <= 10 behÃ¶vs ej. Finns inte som krav enligt boken
     if (l >= 14 && l <= 60 && b >= 9 && t <= 10 && b+l+t <= 90)
-      System.out.println("Måtten OK");
+      System.out.println("MÃ¥tten OK");
     else 
-      System.out.println("Felaktiga mått");
+      System.out.println("Felaktiga mÃ¥tt");
   }
 }
